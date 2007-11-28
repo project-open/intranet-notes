@@ -57,6 +57,7 @@ ad_form -extend -name $form_id \
 	from	im_notes
 	where	note_id = :note_id
     } -new_data {
+	set note [string trim $note]
 	db_exec_plsql create_note "
 		SELECT im_note__new(
 			:note_id,
@@ -72,6 +73,7 @@ ad_form -extend -name $form_id \
 		)
         "
     } -edit_data {
+	set note [string trim $note]
 	db_dml edit_note "
 		update im_notes
 		set note = :note
