@@ -89,3 +89,19 @@ ad_proc -public im_notes_component {
     set result [ad_parse_template -params $params "/packages/intranet-notes/www/notes-list-component"]
     return [string trim $result]
 }
+
+
+
+
+# ----------------------------------------------------------------------
+# Nuke a note
+# ---------------------------------------------------------------------
+
+ad_proc -public im_note_nuke {
+    {-current_user_id 0}
+    note_id
+} {
+    Nuke a note object
+} {
+    db_string im_note_nuke "SELECT im_note__delete(:note_id) from dual"
+}
