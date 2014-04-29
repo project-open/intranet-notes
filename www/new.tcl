@@ -48,7 +48,7 @@ ad_form \
     -form {
 	note_id:key
 	{note_type_id:text(im_category_tree) {label "[lang::message::lookup {} intranet-notes.Notes_Type Type]"} {custom {category_type "Intranet Notes Type" translate_p 1 package_key intranet-notes include_empty_p 0}} }
-	{note:text(textarea) {label "[lang::message::lookup {} intranet-notes.Notes_Note Note]"} {html {cols 40} {rows 8} }}
+	{note:text(textarea) {label "[lang::message::lookup {} intranet-notes.Notes_Note Note]"} {html {cols 60 rows 8} }}
     }
 
 # Add DynFields to the form
