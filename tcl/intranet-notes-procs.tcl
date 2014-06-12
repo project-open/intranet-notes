@@ -64,7 +64,8 @@ ad_proc -public im_note_format {
 	    set note_formatted "<a href=\"$note_url\" target=\"_\">$first_note</a> $rest_note"
 	}
 	default {
-	    set note_formatted "$first_note $rest_note"
+	    set html_p "f"
+	    set note_formatted [ad_convert_to_html -html_p $html_p -- "$first_note $rest_note"]
 	}
     }
     return $note_formatted
@@ -86,7 +87,7 @@ ad_proc -public im_notes_component {
 		    [list return_url [im_url_with_query]] \
     ]
 
-    set result [ad_parse_template -params $params "/packages/intranet-notes/www/notes-list-component"]
+    set result [ad_parse_template -params $params "/packages/intranet-notes/lib/notes-list-component"]
     return [string trim $result]
 }
 
