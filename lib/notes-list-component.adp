@@ -1,5 +1,5 @@
 	<form action=/intranet-notes/action method=POST>
-	<%= [export_form_vars return_url] %>
+	<%= [export_vars -form {return_url}] %>
 	<table class="table_list_page">
 	<thead>	  
 	  <tr class="rowtitle">
