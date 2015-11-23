@@ -32,7 +32,7 @@
 		<select name=action>
 			<option value=del_notes><%= [lang::message::lookup "" intranet-notes.Delete_Notes "Delete Notes"] %></option>
 		</select>	
-		<input type="submit" value="<%=" [lang::message::lookup "" intranet-core.Apply "Apply"] %>>
+		<input type="submit" value="<%= [lang::message::lookup "" intranet-core.Apply "Apply"] %>">
 	    </td>
 	</tr>
 	</tfoot>
