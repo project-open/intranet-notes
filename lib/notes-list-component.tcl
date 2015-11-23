@@ -21,7 +21,7 @@ if {![info exists object_id]} {
 }
 
 if {![info exists return_url] || "" == $return_url} { set return_url [im_url_with_query] }
-set user_id [ad_maybe_redirect_for_registration]
+set user_id [auth::require_login]
 set new_note_url [export_vars -base "/intranet-notes/new" {object_id return_url}]
 
 # Check the permissions

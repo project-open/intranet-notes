@@ -20,7 +20,7 @@ ad_page_contract {
 # Defaults & Security
 # ---------------------------------------------------------------
 
-set user_id [ad_maybe_redirect_for_registration]
+set user_id [auth::require_login]
 
 set note_list [array names note]
 if {0 == [llength $note_list]} { ad_returnredirect $return_url }

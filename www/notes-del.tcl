@@ -21,7 +21,7 @@ ad_page_contract {
 # ---------------------------------------------------------------
 
 # User id already verified by filters
-set user_id [ad_maybe_redirect_for_registration]
+set user_id [auth::require_login]
 
 if {[info exists note_id]} {
     foreach id $note_id {
