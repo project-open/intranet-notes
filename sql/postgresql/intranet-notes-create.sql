@@ -111,7 +111,7 @@ create index im_notes_object_idx on im_notes(object_id);
 -- performs a "double-click" on the "Create New Note" button...
 -- (This makes a lot of sense in practice. Otherwise there would be loads
 -- of duplicated projects in the system and worse...)
-create unique index im_notes_object_note_idx on im_notes(object_id, note);
+create unique index im_notes_object_note_un on im_notes(object_id, note);
 
 
 
