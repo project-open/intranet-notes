@@ -2,9 +2,11 @@
 <message_catalog package_key="intranet-notes" locale="nl_NL" charset="ISO-8859-1">
 
   <msg key="Address">Adres</msg>
-  <msg key="Company_Notes">Bedrijf aantekeningen</msg>
+  <msg key="Company_Notes">Aantekeningen bij het bedrijf</msg>
   <msg key="Create_new_Note">Nieuwe aantekening</msg>
   <msg key="Delete_Notes">Aantekening verwijderen</msg>
+  <msg key="Duplicate_note">Dubbele aantekening</msg>
+  <msg key="Duplicate_note_msg">Er is al een identieke aantekening voor dit object gespecificeerd.</msg>
   <msg key="Email">Email</msg>
   <msg key="Fax">Fax</msg>
   <msg key="Ftp">FTP</msg>
