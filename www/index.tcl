@@ -25,7 +25,7 @@ ad_page_contract {
 
 set user_id [auth::require_login]
 
-set object_name [db_string object_name "select acs_object__name(:object_id)" -default [lang::message::lookup "" intranet-expenes.Unassigned "Unassigned"]]
+set object_name [db_string object_name "select acs_object__name(:object_id)" -default [lang::message::lookup "" intranet-core.Unassigned "Unassigned"]]
 if {0 == $object_id} { set object_name "All" }
 
 set page_title "$object_name [lang::message::lookup "" intranet-notes.Notes "Notes"]"
