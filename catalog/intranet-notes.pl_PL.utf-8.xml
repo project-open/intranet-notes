@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message_catalog package_key="intranet-notes" locale="pl_PL" charset="utf-8">
+
+  <msg key="Address">Adres</msg>
+  <msg key="Create_new_Note">Nowa Notatka</msg>
+  <msg key="Delete">Usuń</msg>
+  <msg key="Delete_Notes">Usuń Notatki</msg>
+  <msg key="Email">Email</msg>
+  <msg key="Fax">Fax</msg>
+  <msg key="Filter_Notes">Filtr Notatek</msg>
+  <msg key="Ftp">Ftp</msg>
+  <msg key="Http">Http</msg>
+  <msg key="Mobile">Tel.Kom.</msg>
+  <msg key="No_Notes_Available">Brak dostępnych notatek</msg>
+  <msg key="Note_CreationUser">Utworzył</msg>
+  <msg key="Note_Date">Data</msg>
+  <msg key="Note_Note">Notatka</msg>
+  <msg key="Note_Object">Objekt</msg>
+  <msg key="Note_Type">Typ Notatki</msg>
+  <msg key="Notes">Notatki</msg>
+  <msg key="Notes_Items">Elementy</msg>
+  <msg key="Notes_Note">Notatka</msg>
+  <msg key="Other">Inne</msg>
+  <msg key="Phone">Telefon</msg>
+  <msg key="Remove_checked_items">Usuń Zaznaczone Pozycje</msg>
+  <msg key="User_Notes">Notatki Użytkownika</msg>
+</message_catalog>
