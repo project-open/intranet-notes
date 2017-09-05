@@ -2,9 +2,12 @@
 <message_catalog package_key="intranet-notes" locale="pl_PL" charset="utf-8">
 
   <msg key="Address">Adres</msg>
-  <msg key="Create_new_Note">Nowa Notatka</msg>
+  <msg key="Company_Notes">Notatki firmy</msg>
+  <msg key="Create_new_Note">Nowa notatka</msg>
   <msg key="Delete">Usuń</msg>
-  <msg key="Delete_Notes">Usuń Notatki</msg>
+  <msg key="Delete_Notes">Usuń notatki</msg>
+  <msg key="Duplicate_note">Powiel notatkę</msg>
+  <msg key="Duplicate_note_msg">Istnieje już identyczna notatka dla tego obiektu.</msg>
   <msg key="Email">Email</msg>
   <msg key="Fax">Fax</msg>
   <msg key="Filter_Notes">Filtr Notatek</msg>
@@ -16,12 +19,15 @@
   <msg key="Note_Date">Data</msg>
   <msg key="Note_Note">Notatka</msg>
   <msg key="Note_Object">Objekt</msg>
-  <msg key="Note_Type">Typ Notatki</msg>
+  <msg key="Note_Type">Typ notatki</msg>
   <msg key="Notes">Notatki</msg>
+  <msg key="Notes_creation">Nowa notatka</msg>
   <msg key="Notes_Items">Elementy</msg>
   <msg key="Notes_Note">Notatka</msg>
+  <msg key="Notes_Type">Typ notatki</msg>
   <msg key="Other">Inne</msg>
   <msg key="Phone">Telefon</msg>
+  <msg key="Project_Notes">Notatki projektowe</msg>
   <msg key="Remove_checked_items">Usuń Zaznaczone Pozycje</msg>
-  <msg key="User_Notes">Notatki Użytkownika</msg>
+  <msg key="User_Notes">Notatki użytkownika</msg>
 </message_catalog>
