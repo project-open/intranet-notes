@@ -29,5 +29,5 @@
   <msg key="Phone">Telefon</msg>
   <msg key="Project_Notes">Projektnotizen</msg>
   <msg key="Remove_checked_items">Ausgewählte Elemente löschen</msg>
-  <msg key="User_Notes">Benutzernotiz</msg>
+  <msg key="User_Notes">Benutzer - Notiz</msg>
 </message_catalog>
