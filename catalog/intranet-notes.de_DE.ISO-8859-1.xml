@@ -11,8 +11,8 @@
   <msg key="Email">E-Mail</msg>
   <msg key="Fax">Fax</msg>
   <msg key="Filter_Notes">Notizen filtern</msg>
-  <msg key="Ftp">Ftp</msg>
-  <msg key="Http">Http</msg>
+  <msg key="Ftp">FTP</msg>
+  <msg key="Http">HTTP</msg>
   <msg key="Mobile">Mobil</msg>
   <msg key="No_Notes_Available">Keine Notizen vorhanden</msg>
   <msg key="Note_CreationUser">Urheber</msg>
