@@ -13,6 +13,7 @@
   <msg key="Http">HTTP</msg>
   <msg key="Mobile">Cellulare</msg>
   <msg key="No_Notes_Available">Nessuna nota disponibile</msg>
+  <msg key="Note_Type">Tipo Nota</msg>
   <msg key="Notes_creation">Nuova nota</msg>
   <msg key="Notes_Note">Nota</msg>
   <msg key="Notes_Type">Tipo di nota</msg>
