@@ -55,7 +55,7 @@ ad_proc -public im_note_format {
 	}
 	11504 {
 	    # Http
-	    if {![regexp {^http:} $note_url match]} { set note_url "http://$note_url" }
+	    if {![regexp {^http:} $note_url match] && ![regexp {^https:} $note_url match]} { set note_url "http://$note_url" }
 	    set note_formatted "<a href=\"$note_url\" target=\"_\">$first_note</a> $rest_note"
 	}
 	11506 {
