@@ -38,7 +38,8 @@ SELECT acs_object_type__create_type (
 update acs_object_types set
         status_type_table = 'im_notes',		-- which table contains the status_id field?
         status_column = 'note_status_id',	-- which column contains the status_id field?
-        type_column = 'note_type_id'		-- which column contains the type_id field?
+        type_column = 'note_type_id',		-- which column contains the type_id field?
+	type_category_type = 'Intranet Notes Type'
 where object_type = 'im_note';
 
 -- Object Type Tables contain the lists of all tables (except for

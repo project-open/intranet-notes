@@ -51,14 +51,25 @@ ad_form \
 	{note:text(textarea) {label "[lang::message::lookup {} intranet-notes.Notes_Note Note]"} {html {cols 60 rows 8} }}
     }
 
+
+
+
+# ---------------------------------------------
 # Add DynFields to the form
-set my_note_id 0
-if {[info exists note_id]} { set my_note_id $note_id }
+# ---------------------------------------------
+
+set dynfield_note_type_id ""
+if {[info exists note_type_id]} { set dynfield_note_type_id $note_type_id}
+
+set dynfield_note_id ""
+if {[info exists note_id]} { set dynfield_note_id $note_id }
+
 im_dynfield::append_attributes_to_form \
+    -form_display_mode $form_mode \
+    -object_subtype_id $dynfield_note_type_id \
     -object_type "im_note" \
     -form_id $form_id \
-    -object_id $my_note_id
-
+    -object_id $dynfield_note_id
 
 
 # ---------------------------------------------------------------
