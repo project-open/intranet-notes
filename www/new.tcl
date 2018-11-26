@@ -47,8 +47,6 @@ ad_form \
     -export "object_id return_url" \
     -form {
 	note_id:key
-	{note_type_id:text(im_category_tree) {label "[lang::message::lookup {} intranet-notes.Notes_Type Type]"} {custom {category_type "Intranet Notes Type" translate_p 1 package_key intranet-notes include_empty_p 0}} }
-	{note:text(textarea) {label "[lang::message::lookup {} intranet-notes.Notes_Note Note]"} {html {cols 60 rows 8} }}
     }
 
 
@@ -70,6 +68,18 @@ im_dynfield::append_attributes_to_form \
     -object_type "im_note" \
     -form_id $form_id \
     -object_id $dynfield_note_id
+
+
+set standard_fields {
+	{note_type_id:text(im_category_tree) {label "[lang::message::lookup {} intranet-notes.Notes_Type Type]"} {custom {category_type "Intranet Notes Type" translate_p 1 package_key intranet-notes include_empty_p 0}} }
+	{note:text(textarea) {label "[lang::message::lookup {} intranet-notes.Notes_Note Note]"} {html {cols 60 rows 8} }}
+}
+foreach standard_field $standard_fields {
+    set field_name [lindex [split [lindex $standard_field 0] ":"] 0]
+    if {![template::element::exists $form_id $field_name]} {
+	ad_form -extend -name $form_id -form [list $standard_field]
+    }
+}
 
 
 # ---------------------------------------------------------------
