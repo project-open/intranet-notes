@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message_catalog package_key="intranet-notes" locale="zh_TW" charset="utf-8">
+
+  <msg key="Create_new_Note">新註解</msg>
+  <msg key="Delete_Notes">刪除註解</msg>
+  <msg key="No_Notes_Available">沒有註解</msg>
+  <msg key="Notes_Note">註解</msg>
+  <msg key="Project_Notes">專案註解</msg>
+  <msg key="User_Notes">用戶註解</msg>
+</message_catalog>
