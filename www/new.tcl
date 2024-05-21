@@ -36,6 +36,12 @@ if {[info exists note_id] && "" == $object_id} {
 }
 
 
+# Check if the note was changed outside of ]po[...
+if {[info exists note_id]} {
+    im_audit -object_id $note_id -action view
+}
+
+
 # ---------------------------------------------------------------
 # Create the Form
 # ---------------------------------------------------------------
@@ -48,8 +54,6 @@ ad_form \
     -form {
 	note_id:key
     }
-
-
 
 
 # ---------------------------------------------
@@ -129,6 +133,8 @@ ad_form -extend -name $form_id \
             -object_id $note_id \
             -form_id $form_id
 
+	im_audit -object_id $note_id -action after_create
+
     } -edit_data {
 
         set note [string trim $note]
@@ -141,6 +147,9 @@ ad_form -extend -name $form_id \
             -object_type "im_note" \
             -object_id $note_id \
             -form_id $form_id
+
+	# ad_return_complaint 1 "im_audit -object_id $note_id -action after_update"
+	im_audit -object_id $note_id -action after_update
 
     } -after_submit {
 	ad_returnredirect $return_url
